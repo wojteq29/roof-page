@@ -1,3 +1,14 @@
+@use 'utilities' as *;
+
 body {
-    
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    font-family: "Anton", sans-serif;
+}
+
+.nav__link {
+    font-family: "Anton", sans-serif;   
 }

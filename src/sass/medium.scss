@@ -1,0 +1,18 @@
+@media (width > 768px) {
+    .nav {
+        display: flex;
+
+        .hamburger {
+            display: none;
+        }
+
+        &__links {
+            position: static;
+            flex-direction: row;
+            background: none;
+            transform: scaleY(1);
+            box-shadow: none;
+            opacity: 1;
+        }
+    }
+}
