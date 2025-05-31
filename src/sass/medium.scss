@@ -1,18 +1,51 @@
+@use 'utilities' as *;
+
 @media (width > 768px) {
-    .nav {
-        display: flex;
+	.nav {
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
 
-        .hamburger {
-            display: none;
-        }
+		.hamburger {
+			display: none;
+		}
 
-        &__links {
-            position: static;
-            flex-direction: row;
-            background: none;
-            transform: scaleY(1);
-            box-shadow: none;
-            opacity: 1;
-        }
-    }
+		&__links {
+			position: static;
+			flex-direction: row;
+			padding: 0;
+			background: none;
+			transform: scaleY(1);
+			box-shadow: none;
+			opacity: 1;
+		}
+
+		&__link {
+			position: relative;
+			color: $light-color;
+			font-size: 2.2rem;
+		}
+
+		&__link::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			transform: scaleY(0);
+			background-color: #e31a1a;
+			transition: transform 0.2s;
+			transform-origin: bottom;
+		}
+
+		&__link:hover {
+			background: none;
+
+			&::before {
+				transform: scaleY(.1);
+			}
+		}
+	}
 }
