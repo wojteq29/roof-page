@@ -32,16 +32,66 @@
         </ul>
     </div>
 </nav>
-    
+
     <header class="header">
-        <div class="wrapper">
-            <h1>Wybuduj swój wymarzony dach</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus!</p>
-            <a href="">Usługi</a>
+        <div class="header__img">
+            <div class="wrapper">
+                <h1 class="header__heading">Wybuduj swój wymarzony dach</h1>
+                <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus!</p>
+                <a href="" class="header__btn btn">Usługi</a>
+
+                <div class="header__stats">
+                    <div class="header__stats-box">
+                        <h3 class="header__stats-heading">500+</h3>
+                        <p class="header__stats-text">Około 500 wykonanych projektów</p>
+                    </div>
+                    <div class="header__stats-line"></div>
+                    <div class="header__stats-box">
+                        <h3 class="header__stats-heading">20+</h3>
+                        <p class="header__stats-text">Ponad 20 lat doświadczenia</p>
+                    </div>
+                    <div class="header__shadow"></div>
+                </div>
+            </div>
         </div>
-        <div class="header__shadow"></div>
+        <div class="wrapper header__form-wrapper">
+            <div class="header__form-box">
+                <form action="" method="post" class="header__form">
+                    <h3 class="header__form-heading">Bezpłatna wycena</h3>
+                    <div class="header__form-input-box-sm">
+                        <div class="header__form-input-box">
+                            <input type="text" placeholder="Imię" class="header__form-input">
+                        </div>
+                        <div class="header__form-input-box">
+                            <input type="text" placeholder="Nazwisko" class="header__form-input">
+                        </div>
+                    </div>
+                    <div class="header__form-input-box">
+                        <input type="mail" placeholder="Adres e-mail" class="header__form-input">
+                    </div>
+                    <div class="header__form-input-box">
+                        <select name="" id="" class="header__form-input header__form-select" required>
+                            <option value="" disabled selected hidden>Wybierz usługę</option>
+                            <option value="">dekarz</option>
+                        </select>
+                    </div>
+                    <div class="header__form-input-box">
+                        <input type="text" placeholder="Opisz usługę" class="header__form-input">
+                    </div>
+                    <input type="checkbox">
+                    <label for="" class="header__form-label">Akceptuję <a href=""
+                            class="header__form-privacy-policy">politykę
+                            prywatności</a></label>
+                    <div class="header__form-btn-box">
+                        <button type="submit" class="header__form-btn btn">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
+
 
     <script src="./dist/js/main.min.js"></script>
 </body>
+
 </html>

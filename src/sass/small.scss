@@ -1,0 +1,48 @@
+@use 'utilities' as *;
+
+@media (width > 375px) {
+	.header {
+		&__heading {
+			font-size: 4.6rem;
+		}
+
+		&__text {
+			font-size: 1.9rem;
+		}
+
+		&__form {
+			&-heading {
+				font-size: 3.8rem;
+			}
+		}
+	}
+}
+
+@media (width > 420px) {
+	.header {
+		&__stats {
+			margin-bottom: 1em;
+			max-width: 402px;
+
+			&-box {
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media (width > 576px) {
+	.header {
+		&__stats {
+			max-width: 402px;
+
+			&-box:nth-child(1) {
+				text-align: left;
+			}
+
+			&-box:nth-child(3) {
+				text-align: left;
+			}
+		}
+	}
+}

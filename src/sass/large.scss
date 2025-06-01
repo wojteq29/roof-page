@@ -1,0 +1,52 @@
+@use 'utilities' as *;
+
+@media (width > 992px) {
+	.header {
+		&__img {
+			background-image: url('../img/header-img-big.jpg');
+		}
+	}
+}
+
+@media (width > 1200px) {
+	.header {
+		&__heading {
+            width: 40%;
+			font-size: 5.4rem;
+		}
+
+		&__text {
+            width: 50%;
+			font-size: 2.2rem;
+		}
+
+		&__form-wrapper {
+			position: relative;
+			top: -35.5em;
+		}
+
+		&__form-box {
+			position: absolute;
+			right: 1em;
+			width: 35%;
+			max-width: 400px;
+			box-shadow: 5px 5px 5px #0000003b;
+		}
+
+		&__form {
+			padding: 2em 1em;
+
+			&-heading {
+				font-size: 3.4rem;
+			}
+
+			&-input {
+				padding: 0.7em 1em;
+			}
+
+			&-btn {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}

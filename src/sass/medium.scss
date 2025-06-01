@@ -44,7 +44,36 @@
 			background: none;
 
 			&::before {
-				transform: scaleY(.1);
+				transform: scaleY(0.1);
+			}
+		}
+	}
+
+	.header {
+		&__heading {
+			margin-top: 1.4em;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__form {
+			&-heading {
+				font-size: 4.2rem;
+			}
+		}
+
+		&__stats {
+			margin-top: 6.4em;
+			max-width: 444px;
+
+			&-heading {
+				font-size: 5rem;
+			}
+
+			&-text {
+				font-size: 1.8rem;
 			}
 		}
 	}

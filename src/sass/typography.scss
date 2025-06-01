@@ -5,10 +5,12 @@ body {
     font-size: 1.6rem;
 }
 
-h1, h2 {
+h1, h2, h3, .btn, input::placeholder, select:invalid {
     font-family: "Anton", sans-serif;
+    text-transform: uppercase;
 }
 
 .nav__link {
     font-family: "Anton", sans-serif;   
+    text-transform: uppercase;
 }
