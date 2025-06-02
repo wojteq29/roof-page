@@ -1,23 +1,33 @@
 @use 'utilities' as *;
 
 .wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 .btn {
-    padding: .3em 2.2em;
-    text-decoration: none;
-    font-size: 2rem;
-    background-color: $main-color;
-    color: $light-color;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+	padding: 0.3em 2.2em;
+	text-decoration: none;
+	font-size: 2rem;
+	background-color: $main-color;
+	color: $light-color;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
 
-    &--light {
-        color: $dark-color;
-        background-color: $light-color;
-    }
+	&--light {
+		color: $dark-color;
+		background-color: $light-color;
+	}
+}
+
+.section-padding {
+    padding: 2.4em 1em;
+}
+
+.section-heading {
+	margin-bottom: .7em;
+	text-align: center;
+	font-size: 3.6rem;
 }

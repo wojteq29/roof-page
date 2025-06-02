@@ -74,7 +74,6 @@
 
 	&__heading {
 		margin-top: 1em;
-		font-weight: 400;
 		font-size: 4rem;
 		color: $light-color;
 	}
@@ -160,12 +159,12 @@
 
 	&__stats {
 		display: flex;
-		justify-content: center;
 		margin-top: 5em;
 
 		&-box {
-			width: 50%;
-			text-align: center;
+			margin-right: 2em;
+			max-width: 120px;
+			width: 35%;
 		}
 
 		&-heading {
@@ -175,12 +174,6 @@
 
 		&-text {
 			color: $light-color;
-		}
-
-		&-line {
-			margin: 0 2.2em;
-			width: 2px;
-			background-color: $light-color;
 		}
 	}
 
@@ -192,5 +185,50 @@
 		width: 100%;
 		background-color: #00000060;
 		z-index: -10;
+	}
+}
+
+.services {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		gap: 1.4em;
+	}
+
+	&__card {
+		position: relative;
+
+		&-img {
+			display: block;
+			width: 100%;
+			min-height: 300px;
+			object-fit: cover;
+		}
+
+		&-info {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 1em;
+			width: 100%;
+			color: $light-color;
+			background-color: #000000aa;
+		}
+
+		&-text {
+			width: 80%;
+			font-size: 1.4rem;
+		}
+
+		&-btn {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 1.1em 1.2em .9em;
+			background-color: $main-color;
+			border: none;
+			cursor: pointer;
+		}
 	}
 }

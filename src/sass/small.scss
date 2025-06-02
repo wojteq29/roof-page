@@ -1,6 +1,10 @@
 @use 'utilities' as *;
 
 @media (width > 375px) {
+	.section-heading {
+		font-size: 4rem;
+	}
+
 	.header {
 		&__heading {
 			font-size: 4.6rem;
