@@ -9,14 +9,21 @@
 </head>
 
 <body>
-    @@include('./components/_nav.html')
+    @@include('./components/_nav.html', {
+    "index": "#index",
+    "about-us": "#about-us",
+    "services": "#services",
+    "gallery": "gallery.html",
+    "contact": "#contact"
+    })
 
-    <header class="header">
+    <header class="header" id="index">
         <div class="header__img">
-            <div class="wrapper">
+            <div class="wrapper header__wrapper">
                 <h1 class="header__heading">Wybuduj swój wymarzony dach</h1>
                 <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus!</p>
-                <a href="" class="header__btn btn">Usługi</a>
+                <a href="#form" class="header__btn btn header__btn-mobile">Bezpłatna wycena</a>
+                <a href="#services" class="header__btn btn header__btn-desktop">Usługi</a>
 
                 <div class="header__stats">
                     <div class="header__stats-box">
@@ -27,79 +34,257 @@
                         <h3 class="header__stats-heading">20+</h3>
                         <p class="header__stats-text">Lat doświadczenia</p>
                     </div>
-                    <div class="header__shadow"></div>
+                    <div class="header__form-box">
+                        <form action="" method="post" class="header__form">
+                            <h3 class="header__form-heading">Bezpłatna wycena</h3>
+                            <div class="header__form-input-box-sm">
+                                <div class="header__form-input-box">
+                                    <input type="text" placeholder="Imię" class="header__form-input">
+                                </div>
+                                <div class="header__form-input-box">
+                                    <input type="text" placeholder="Nazwisko" class="header__form-input">
+                                </div>
+                            </div>
+                            <div class="header__form-input-box">
+                                <input type="mail" placeholder="Adres e-mail" class="header__form-input">
+                            </div>
+                            <div class="header__form-input-box">
+                                <select name="" id="" class="header__form-input header__form-select" required>
+                                    <option value="" disabled selected hidden>Wybierz usługę</option>
+                                    <option value="">dekarz</option>
+                                </select>
+                            </div>
+                            <div class="header__form-input-box">
+                                <input type="text" placeholder="Opisz usługę" class="header__form-input">
+                            </div>
+                            <input type="checkbox" id="privacy-policy" class="header__form-checkbox">
+                            <label for="privacy-policy" class="header__form-label">Akceptuję <a href=""
+                                    class="header__form-privacy-policy link-animation">politykę
+                                    prywatności</a></label>
+                            <div class="header__form-btn-box">
+                                <button type="submit" class="header__form-btn btn">Wyślij</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper header__form-wrapper">
-            <div class="header__form-box">
-                <form action="" method="post" class="header__form">
-                    <h3 class="header__form-heading">Bezpłatna wycena</h3>
-                    <div class="header__form-input-box-sm">
-                        <div class="header__form-input-box">
-                            <input type="text" placeholder="Imię" class="header__form-input">
-                        </div>
-                        <div class="header__form-input-box">
-                            <input type="text" placeholder="Nazwisko" class="header__form-input">
-                        </div>
-                    </div>
-                    <div class="header__form-input-box">
-                        <input type="mail" placeholder="Adres e-mail" class="header__form-input">
-                    </div>
-                    <div class="header__form-input-box">
-                        <select name="" id="" class="header__form-input header__form-select" required>
-                            <option value="" disabled selected hidden>Wybierz usługę</option>
-                            <option value="">dekarz</option>
-                        </select>
-                    </div>
-                    <div class="header__form-input-box">
-                        <input type="text" placeholder="Opisz usługę" class="header__form-input">
-                    </div>
-                    <input type="checkbox">
-                    <label for="" class="header__form-label">Akceptuję <a href=""
-                            class="header__form-privacy-policy">politykę
-                            prywatności</a></label>
-                    <div class="header__form-btn-box">
-                        <button type="submit" class="header__form-btn btn">Wyślij</button>
-                    </div>
-                </form>
-            </div>
+            <div class="header__shadow"></div>
         </div>
     </header>
 
     <main class="main">
-        <section class="services section-padding">
+        <section class="services section-padding" id="services">
             <div class="wrapper">
                 <h2 class="section-heading">Nasze usługi</h2>
                 <div class="services__cards">
-                    <a href="">
-                        <div class="services__card">
+                    <div class="services__card">
+                        <a href="">
                             <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
                             <div class="services__card-info">
                                 <h3 class="services__card-heading">Naprawa dachu</h3>
-                                <p class="services__card-text">Zajmujemy się profesjonalną naprawą dachów</p>
-                                <button class="services__card-btn"><img src="./dist/img/icons/plus.svg" alt=""></button>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
                             </div>
-                        </div>
-                    </a>
-                    <div class="services__card">
-                        <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
-                        <div class="services__card-info">
-                            <h3 class="services__card-heading">Naprawa dachu</h3>
-                            <p class="services__card-text">Zajmujemy się profesjonalną naprawą dachów</p>
-                        </div>
+                        </a>
                     </div>
                     <div class="services__card">
-                        <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
-                        <div class="services__card-info">
-                            <h3 class="services__card-heading">Naprawa dachu</h3>
-                            <p class="services__card-text">Zajmujemy się profesjonalną naprawą dachów</p>
+                        <a href="">
+                            <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
+                            <div class="services__card-info">
+                                <h3 class="services__card-heading">Naprawa dachu</h3>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__card">
+                        <a href="">
+                            <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
+                            <div class="services__card-info">
+                                <h3 class="services__card-heading">Naprawa dachu</h3>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__card">
+                        <a href="">
+                            <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
+                            <div class="services__card-info">
+                                <h3 class="services__card-heading">Naprawa dachu</h3>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__card">
+                        <a href="">
+                            <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
+                            <div class="services__card-info">
+                                <h3 class="services__card-heading">Naprawa dachu</h3>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__card">
+                        <a href="">
+                            <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
+                            <div class="services__card-info">
+                                <h3 class="services__card-heading">Naprawa dachu</h3>
+                                <p class="services__card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Corrupti molestias neque quidem laudantium.</p>
+                                <button class="services__card-btn btn btn--light">Czytaj więcej...</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-us section-padding" id="about-us">
+            <div class="wrapper">
+                <h2 class="section-heading about-us__heading">O firmie</h2>
+                <div class="about-us__info">
+
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="about-us__img">
+
+                    <div class="about-us__box-text">
+                        <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus eos
+                            dignissimos vel distinctio quae corporis illum inventore, voluptatem commodi corrupti
+                            aliquam.
+                            Vitae saepe doloribus, veritatis hic labore corporis numquam error quis similique nam
+                            dolorem
+                            molestias ipsam distinctio eum dolores.</p>
+                        <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                            dignissimos sint voluptate, minima fugiat officiis suscipit cum quos nostrum voluptatem
+                            ipsa.
+                            Omnis et, quibusdam aliquam aperiam pariatur modi temporibus cumque mollitia recusandae
+                            voluptatum iure consectetur explicabo veniam, non accusamus sunt suscipit velit quod
+                            repudiandae
+                            incidunt dicta ipsa illum, numquam quisquam! Vero esse libero dicta magni consequuntur.
+                            Vitae
+                            incidunt quibusdam illo?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="features section-padding section-red">
+            <div class="wrapper">
+                <h2 class="section-heading">Dlaczego my?</h2>
+                <div class="features__cards">
+                    <div class="features__card">
+                        <img src="./dist/img/icons/handshake.svg" alt="" class="features__card-icon">
+                        <p class="features__card-text">Zaufani przez 1000 klientów</p>
+                    </div>
+                    <div class="features__card">
+                        <img src="./dist/img/icons/handshake.svg" alt="" class="features__card-icon">
+                        <p class="features__card-text">Zaufani przez 1000 klientów</p>
+                    </div>
+                    <div class="features__card">
+                        <img src="./dist/img/icons/handshake.svg" alt="" class="features__card-icon">
+                        <p class="features__card-text">Zaufani przez 1000 klientów</p>
+                    </div>
+                    <div class="features__card">
+                        <img src="./dist/img/icons/handshake.svg" alt="" class="features__card-icon">
+                        <p class="features__card-text">Zaufani przez 1000 klientów</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Nasze realizacje</h2>
+                <div class="gallery__imgs">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__btn-box">
+                    <a href="" class="gallery__btn btn">Zobacz więcej...</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-padding section-red" id="contact">
+            <div class="wrapper">
+                <h2 class="section-heading">Kontakt</h2>
+                <div class="contact__boxes">
+                    <div class="contact__info-box">
+                        <div class="contact__info-cards">
+                            <a href="mailto:kontakt@mail.com" class="contact__info-card">
+                                <img src="./dist/img/icons/mail.svg" alt="" class="contact__info-card-icon">
+                                <p class="contact__info-card-text">kontakt@mail.com</p>
+                            </a>
+                            <a href="https://maps.app.goo.gl/sYynAzmMJbTKi3d58" class="contact__info-card">
+                                <img src="./dist/img/icons/map-pin.svg" alt="" class="contact__info-card-icon">
+                                <p class="contact__info-card-text">Szeroka 1, Kokoszczyn</p>
+                            </a>
                         </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.0041900024903!2d16.650793977622985!3d52.497163737918854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47043f19e7389365%3A0xbc6efbaee2e982a0!2sSzeroka%201%2C%2062-080%20Kokoszczyn!5e0!3m2!1spl!2spl!4v1748956135805!5m2!1spl!2spl"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact__form-box" id="form">
+                        <form action="" method="post" class="contact__form">
+                            <h3 class="contact__form-heading section-heading">Napisz do nas</h3>
+                            <div class="contact__form-input-box-sm">
+                                <div class="contact__form-input-box">
+                                    <input type="text" placeholder="Imię" class="contact__form-input">
+                                </div>
+                                <div class="contact__form-input-box">
+                                    <input type="text" placeholder="Nazwisko" class="contact__form-input">
+                                </div>
+                            </div>
+                            <div class="contact__form-input-box">
+                                <input type="mail" placeholder="Adres e-mail" class="contact__form-input">
+                            </div>
+                            <div class="contact__form-input-box">
+                                <select name="" id="" class="contact__form-input contact__form-select" required>
+                                    <option value="" disabled selected hidden>Wybierz usługę</option>
+                                    <option value="">dekarz</option>
+                                </select>
+                            </div>
+                            <div class="contact__form-input-box">
+                                <input type="text" placeholder="Opisz usługę" class="contact__form-input">
+                            </div>
+                            <input type="checkbox" id="privacy-policy-2" class="contact__form-checkbox">
+                            <label for="privacy-policy-2" class="contact__form-label">Akceptuję <a href=""
+                                    class="contact__form-privacy-policy link-animation link-animation--light">politykę
+                                    prywatności</a></label>
+                            <div class="contact__form-btn-box">
+                                <button type="submit" class="contact__form-btn btn btn--light">Wyślij</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    @@include('./components/_footer.html', {
+    "index": "#index",
+    "about-us": "#about-us",
+    "services": "#services",
+    "gallery": "gallery.html",
+    "contact": "#contact"
+    })
 
 
     <script src="./dist/js/main.min.js"></script>

@@ -2,11 +2,11 @@
 
 @media (width > 768px) {
 	.section-padding {
-		padding: 3em 1em;
+		padding: 4em 1em;
 	}
 
 	.section-heading {
-		font-size: 4.4rem;
+		font-size: 4.6rem;
 	}
 
 	.nav {
@@ -43,7 +43,7 @@
 			height: 100%;
 			width: 100%;
 			transform: scaleY(0);
-			background-color: #e31a1a;
+			background-color: $light-color;
 			transition: transform 0.2s;
 			transform-origin: bottom;
 		}
@@ -63,6 +63,7 @@
 		}
 
 		&__text {
+			width: 65%;
 			font-size: 2rem;
 		}
 
@@ -81,6 +82,71 @@
 
 			&-text {
 				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.services {
+		&__card {
+			width: 48%;
+
+			&-heading {
+				font-size: 2.2rem;
+			}
+
+			&-text {
+				font-size: 1.45rem;
+			}
+
+			&-btn {
+				padding: 0.4em 1em;
+			}
+		}
+	}
+
+	.about-us {
+		&__info {
+			align-items: stretch;
+			flex-direction: row;
+			gap: 1.8em;
+		}
+
+		&__box-text {
+			margin-top: 0;
+			width: 50%;
+		}
+
+		&__text {
+			margin-top: 0;
+			margin-bottom: 0.8em;
+		}
+
+		&__img {
+			width: 50%;
+		}
+	}
+
+	.features {
+		&__cards {
+			margin: 0 4em;
+		}
+	}
+
+	.gallery {
+		&__imgs {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.contact {
+		&__info-card {
+			&-icon {
+				width: 100px;
+			}
+
+			&-text {
+				margin-top: 0.4em;
+				font-size: 2.4rem;
 			}
 		}
 	}

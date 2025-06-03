@@ -35,8 +35,31 @@
 	}
 }
 
+@media (width > 450px) {
+	.contact {
+		&__info-cards {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__about-us-box {
+			grid-column: 1 / 3;
+		}
+	}
+}
+
 @media (width > 576px) {
 	.header {
+		&__text {
+			width: 85%;
+		}
+
 		&__stats {
 			max-width: 402px;
 
@@ -47,6 +70,42 @@
 			&-box:nth-child(3) {
 				text-align: left;
 			}
+		}
+	}
+
+	.services {
+		&__card {
+			&-heading {
+				font-size: 2.4rem;
+			}
+
+			&-text {
+				font-size: 1.6rem;
+			}
+
+			&-btn {
+				padding: 0.4em 1.2em;
+			}
+		}
+	}
+
+	.features {
+		&__cards {
+			grid-template-columns: 1fr 1fr;
+			gap: 4em 2em;
+			margin-top: 3em;
+		}
+
+		&__card {
+			&-text {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.footer {
+		&__heading {
+			font-size: 2.8rem;
 		}
 	}
 }

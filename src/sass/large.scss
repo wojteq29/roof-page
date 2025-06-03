@@ -1,11 +1,19 @@
 @use 'utilities' as *;
 
 @media (width > 992px) {
+	.section-padding {
+		padding: 4.6em 1em;
+	}
+
 	.section-heading {
 		font-size: 5rem;
 	}
 
 	.header {
+		&__wrapper {
+			position: relative;
+		}
+
 		&__img {
 			background-image: url('../img/header-img-big.jpg');
 		}
@@ -14,43 +22,176 @@
 			width: 40%;
 			font-size: 5.4rem;
 		}
-		
+
 		&__text {
 			width: 50%;
 			font-size: 2.2rem;
 		}
-		
-		&__form-wrapper {
-			position: relative;
-			top: -35.5em;
+
+		&__btn {
+			&-desktop {
+				display: inline;
+			}
+
+			&-mobile {
+				display: none;
+			}
 		}
-		
+
 		&__form-box {
+			display: block;
 			position: absolute;
-			right: 1em;
-			width: 35%;
-			max-width: 400px;
+			top: 0;
+			right: 0;
+			max-width: 375px;
 			box-shadow: 5px 5px 5px #0000003b;
 		}
-		
+
 		&__form {
 			padding: 2em 1em;
-		
+			background-color: #ffffff;
+
 			&-heading {
+				margin-bottom: 0.5em;
+				text-align: center;
 				font-size: 3.4rem;
 			}
-		
-			&-input {
-				padding: 0.7em 1em;
+
+			&-input-box-sm {
+				display: flex;
+				gap: 0 0.6em;
+				width: 100%;
 			}
-		
+
+			&-input-box {
+				width: 100%;
+				margin-bottom: 1.6em;
+			}
+
+			&-input {
+				padding: 0 1em;
+				height: 40px;
+				width: 100%;
+				font-size: 1.5rem;
+				border: 1px solid $dark-color;
+				border-radius: 0;
+				color: $dark-color;
+				background: none;
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+
+				&:focus-visible {
+					outline: none;
+					border: 1px solid $main-color;
+				}
+			}
+
+			&-select {
+				background-image: url('../img/icons/chevron-down.svg');
+				background-repeat: no-repeat;
+				background-position: right 1rem center;
+				background-size: 1.6rem;
+				cursor: pointer;
+			}
+
+			&-select:invalid,
+			&-input::placeholder {
+				color: #6c757d;
+			}
+
+			&-privacy-policy {
+				color: $dark-color;
+				font-style: italic;
+			}
+
+			&-label {
+				display: inline-block;
+				margin-bottom: 2em;
+			}
+
+			&-btn-box {
+				display: flex;
+				justify-content: center;
+			}
+
 			&-btn {
 				font-size: 2.2rem;
+				border: 1px solid transparent;
+
+				&:hover {
+					border: 1px solid $dark-color;
+				}
 			}
+		}
+	}
+
+	.features {
+		&__cards {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 4em;
+		}
+
+		&__card:nth-child(4) {
+			grid-column: auto;
+		}
+	}
+
+	.gallery {
+		&__imgs {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&__img {
+			max-height: 400px;
+		}
+	}
+
+	.contact {
+		&__boxes {
+			display: flex;
+			justify-content: center;
+			gap: 2em;
+			margin-top: 5em;
+			padding: 0 2em;
+		}
+
+		&__form-box {
+			margin-top: 0;
+			width: 70%;
+		}
+
+		&__form {
+			margin-left: 2em;
+
+			&-heading {
+				font-size: 3.5rem;
+			}
+		}
+	}
+
+	.footer {
+		.wrapper {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&__about-us-box {
+			grid-column: auto;
+			margin-right: 5em;
 		}
 	}
 }
 
 @media (width > 1200px) {
-	
+	.services {
+		&__card {
+			width: 32%;
+		}
+	}
+
+	.contact {
+		&__boxes {
+			padding: 0;
+		}
+	}
 }
