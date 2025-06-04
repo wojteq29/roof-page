@@ -53,32 +53,38 @@
                     <div class="header__form-box">
                         <form action="" method="post" class="header__form">
                             <h3 class="header__form-heading">Bezpłatna wycena</h3>
-                            <div class="header__form-input-box-sm">
-                                <div class="header__form-input-box">
-                                    <input type="text" placeholder="Imię" class="header__form-input">
-                                </div>
-                                <div class="header__form-input-box">
-                                    <input type="text" placeholder="Nazwisko" class="header__form-input">
-                                </div>
+
+                            <div class="header__form-input-box">
+                                <input type="text" placeholder="Imię i nazwisko" class="header__form-input" id="header-name">
+                                <p class="header__form-error"></p>
                             </div>
                             <div class="header__form-input-box">
-                                <input type="mail" placeholder="Adres e-mail" class="header__form-input">
+                                <input type="mail" placeholder="Adres e-mail" class="header__form-input" id="header-email">
+                                <p class="header__form-error"></p>
+
                             </div>
                             <div class="header__form-input-box">
-                                <select name="" id="" class="header__form-input header__form-select" required>
+                                <select name="" id="header-service" place class="header__form-input header__form-select" required>
                                     <option value="" disabled selected hidden>Wybierz usługę</option>
-                                    <option value="">dekarz</option>
+                                    <option value="1">dekarz</option>
+                                    <option value="2">komin</option>
+                                    <option value="3">blacha</option>
+                                    <option value="4">kościół</option>
                                 </select>
+                                <p class="header__form-error"></p>
                             </div>
                             <div class="header__form-input-box">
-                                <input type="text" placeholder="Opisz usługę" class="header__form-input">
+                                <textarea type="text" placeholder="Opis usługi"
+                                    class="header__form-input header__form-textarea" id="header-service-info"></textarea>
+                                <p class="header__form-error"></p>
+
                             </div>
-                            <input type="checkbox" id="privacy-policy" class="header__form-checkbox">
-                            <label for="privacy-policy" class="header__form-label">Akceptuję <a href=""
+                            <input type="checkbox" id="header-privacy-policy" class="header__form-checkbox">
+                            <label for="header-privacy-policy" class="header__form-label">Akceptuję <a href=""
                                     class="header__form-privacy-policy link-animation">politykę
                                     prywatności</a></label>
                             <div class="header__form-btn-box">
-                                <button type="submit" class="header__form-btn btn">Wyślij</button>
+                                <button type="submit" class="header__form-btn btn btn-disabled" disabled>Wyślij</button>
                             </div>
                         </form>
                     </div>
@@ -278,7 +284,8 @@
                                 </select>
                             </div>
                             <div class="contact__form-input-box">
-                                <input type="text" placeholder="Opisz usługę" class="contact__form-input">
+                                <textarea type="text" placeholder="Opisz usługę"
+                                    class="contact__form-input contact__form-textarea"></textarea>
                             </div>
                             <input type="checkbox" id="privacy-policy-2" class="contact__form-checkbox">
                             <label for="privacy-policy-2" class="contact__form-label">Akceptuję <a href=""

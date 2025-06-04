@@ -22,6 +22,17 @@
 		color: $dark-color;
 	}
 
+	&-disabled {
+		background-color: #9a2a2c9f;
+		cursor: not-allowed;
+
+		&:hover {
+			background-color: #9a2a2c9f;
+			border: 1px solid transparent;
+			color: $light-color;
+		}
+	}
+
 	&--light {
 		color: $dark-color;
 		background-color: $light-color;

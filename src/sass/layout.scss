@@ -31,11 +31,14 @@
 		transform-origin: top;
 		opacity: 0;
 		transition: transform 0.3s, opacity 0.3s;
+		z-index: 1000;
 	}
 
 	.show-nav {
 		transform: scaleY(1);
 		opacity: 1;
+		max-height: 85vh;
+		overflow-y: auto;
 	}
 
 	&__li {
@@ -389,8 +392,17 @@
 		}
 
 		&-select:invalid,
-		&-input::placeholder {
+		&-input::placeholder,
+		&-textarea::placeholder {
 			color: #6c757d;
+		}
+
+		&-textarea {
+			padding-top: 0.65em;
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+			min-height: 42px;
 		}
 
 		&-privacy-policy {
