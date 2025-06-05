@@ -54,35 +54,39 @@
                         <form action="" method="post" class="header__form">
                             <h3 class="header__form-heading">Bezpłatna wycena</h3>
 
-                            <div class="header__form-input-box">
-                                <input type="text" placeholder="Imię i nazwisko" class="header__form-input" id="header-name">
-                                <p class="header__form-error"></p>
+                            <div class="header__form-input-box form-input-box">
+                                <input type="text" placeholder="Imię i nazwisko" class="header__form-input form-input"
+                                    id="header-name">
+                                <p class="header__form-error-text form-error-text"></p>
                             </div>
-                            <div class="header__form-input-box">
-                                <input type="mail" placeholder="Adres e-mail" class="header__form-input" id="header-email">
-                                <p class="header__form-error"></p>
+                            <div class="header__form-input-box form-input-box">
+                                <input type="mail" placeholder="Adres e-mail" class="header__form-input form-input"
+                                    id="header-email">
+                                <p class="header__form-error-text form-error-text"></p>
 
                             </div>
-                            <div class="header__form-input-box">
-                                <select name="" id="header-service" place class="header__form-input header__form-select" required>
+                            <div class="header__form-input-box form-input-box">
+                                <select name="" id="header-service" place
+                                    class="header__form-input form-input header__form-select" required>
                                     <option value="" disabled selected hidden>Wybierz usługę</option>
                                     <option value="1">dekarz</option>
                                     <option value="2">komin</option>
                                     <option value="3">blacha</option>
                                     <option value="4">kościół</option>
                                 </select>
-                                <p class="header__form-error"></p>
+                                <p class="header__form-error-text form-error-text"></p>
                             </div>
-                            <div class="header__form-input-box">
+                            <div class="header__form-input-box form-input-box">
                                 <textarea type="text" placeholder="Opis usługi"
-                                    class="header__form-input header__form-textarea" id="header-service-info"></textarea>
-                                <p class="header__form-error header__form-error--textarea"></p>
+                                    class="header__form-input form-input header__form-textarea"
+                                    id="header-service-info"></textarea>
+                                <p class="header__form-error-text form-error-text"></p>
 
                             </div>
                             <input type="checkbox" id="header-privacy-policy" class="header__form-checkbox">
                             <label for="header-privacy-policy" class="header__form-label">Akceptuję <a href=""
                                     class="header__form-privacy-policy link-animation">politykę
-                                    prywatności</a></label>
+                                    prywatności</a> <span class="header__form-privacy-policy-star">*</span></label>
                             <div class="header__form-btn-box">
                                 <button type="submit" class="header__form-btn btn btn-disabled" disabled>Wyślij</button>
                             </div>
@@ -90,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header__shadow"></div>
+            <div class="hero-shadow"></div>
         </div>
     </header>
 
@@ -100,7 +104,7 @@
                 <h2 class="section-heading">Nasze usługi</h2>
                 <div class="services__cards">
                     <div class="services__card">
-                        <a href="">
+                        <a href="usluga-testowa.html">
                             <img src="./dist/img/header-img-small.jpg" alt="" class="services__card-img">
                             <div class="services__card-info">
                                 <h3 class="services__card-heading">Naprawa dachu</h3>
@@ -259,40 +263,49 @@
                             </a>
                         </div>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.0041900024903!2d16.650793977622985!3d52.497163737918854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47043f19e7389365%3A0xbc6efbaee2e982a0!2sSzeroka%201%2C%2062-080%20Kokoszczyn!5e0!3m2!1spl!2spl!4v1748956135805!5m2!1spl!2spl"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.0041900089!2d16.650788612808302!3d52.49716373780283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47043f19e7389365%3A0xbc6efbaee2e982a0!2sSzeroka%201%2C%2062-080%20Kokoszczyn!5e0!3m2!1spl!2spl!4v1749137120502!5m2!1spl!2spl"
                             width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="contact__form-box" id="form">
                         <form action="" method="post" class="contact__form">
                             <h3 class="contact__form-heading section-heading">Napisz do nas</h3>
-                            <div class="contact__form-input-box-sm">
-                                <div class="contact__form-input-box">
-                                    <input type="text" placeholder="Imię" class="contact__form-input">
-                                </div>
-                                <div class="contact__form-input-box">
-                                    <input type="text" placeholder="Nazwisko" class="contact__form-input">
-                                </div>
+                            <div class="contact__form-input-box form-input-box">
+                                <input type="text" placeholder="Imię i nazwisko" class="contact__form-input form-input"
+                                    id="contact-name">
+                                <p class="contact__form-error-text form-error-text"></p>
                             </div>
-                            <div class="contact__form-input-box">
-                                <input type="mail" placeholder="Adres e-mail" class="contact__form-input">
+                            <div class="contact__form-input-box form-input-box">
+                                <input type="mail" placeholder="Adres e-mail" class="contact__form-input form-input"
+                                    id="contact-email">
+                                <p class="contact__form-error-text form-error-text"></p>
+
                             </div>
-                            <div class="contact__form-input-box">
-                                <select name="" id="" class="contact__form-input contact__form-select" required>
+                            <div class="contact__form-input-box form-input-box">
+                                <select name="" id="contact-service" place
+                                    class="contact__form-input form-input contact__form-select" required>
                                     <option value="" disabled selected hidden>Wybierz usługę</option>
-                                    <option value="">dekarz</option>
+                                    <option value="1">dekarz</option>
+                                    <option value="2">komin</option>
+                                    <option value="3">blacha</option>
+                                    <option value="4">kościół</option>
                                 </select>
+                                <p class="contact__form-error-text form-error-text"></p>
                             </div>
-                            <div class="contact__form-input-box">
-                                <textarea type="text" placeholder="Opisz usługę"
-                                    class="contact__form-input contact__form-textarea"></textarea>
+                            <div class="contact__form-input-box form-input-box">
+                                <textarea type="text" placeholder="Opis usługi"
+                                    class="contact__form-input form-input contact__form-textarea"
+                                    id="contact-service-info"></textarea>
+                                <p class="contact__form-error-text form-error-text"></p>
+
                             </div>
-                            <input type="checkbox" id="privacy-policy-2" class="contact__form-checkbox">
-                            <label for="privacy-policy-2" class="contact__form-label">Akceptuję <a href=""
+                            <input type="checkbox" id="contact-privacy-policy" class="contact__form-checkbox">
+                            <label for="contact-privacy-policy" class="contact__form-label">Akceptuję <a href=""
                                     class="contact__form-privacy-policy link-animation link-animation--light">politykę
-                                    prywatności</a></label>
+                                    prywatności</a> <span class="contact__form-privacy-policy-star">*</span></label>
                             <div class="contact__form-btn-box">
-                                <button type="submit" class="contact__form-btn btn btn--light">Wyślij</button>
+                                <button type="submit" class="contact__form-btn btn btn--light btn--light-disabled"
+                                    disabled>Wyślij</button>
                             </div>
                         </form>
                     </div>
@@ -341,6 +354,7 @@
 
 
     <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/home.min.js"></script>
 </body>
 
 </html>

@@ -103,22 +103,13 @@
 				color: #6c757d;
 			}
 
-			&-error {
-				display: none;
-				position: absolute;
-				bottom: -1.4em;
-				font-size: 1.2rem;
-				font-weight: 400;
-				color: $error-color;
-
-				&--textarea {
-					bottom: -1.13em;
-				}
-			}
-
 			&-privacy-policy {
 				color: $dark-color;
 				font-style: italic;
+			}
+
+			&-privacy-policy-star {
+				color: $error-color;
 			}
 
 			&-label {
@@ -142,14 +133,6 @@
 
 			&-btn.btn-disabled:hover {
 				border: 1px solid transparent;
-			}
-
-			&-input-box.form-error .header__form-input {
-				border-bottom: 3px solid $error-color;
-			}
-
-			&-input-box.form-error .header__form-error {
-				display: block;
 			}
 		}
 	}
@@ -212,6 +195,22 @@
 			margin-right: 5em;
 		}
 	}
+
+	.services-heading {
+		font-size: 4rem;
+	}
+
+	.header-services {
+		&--test {
+			background-image: url('../img/header-img-big.jpg');
+		}
+	}
+
+	.main-services {
+		padding: 4.4em 2em;
+	}
+
+	
 }
 
 @media (width > 1200px) {

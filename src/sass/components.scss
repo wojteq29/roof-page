@@ -6,6 +6,16 @@
 	max-width: 1200px;
 }
 
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #00000060;
+	z-index: -10;
+}
+
 .btn {
 	padding: 0.3em 2.2em;
 	text-decoration: none;
@@ -28,7 +38,6 @@
 
 		&:hover {
 			background-color: #9a2a2c9f;
-			border: 1px solid transparent;
 			color: $light-color;
 		}
 	}
@@ -40,6 +49,16 @@
 		&:hover {
 			background-color: $main-color;
 			color: $light-color;
+		}
+
+		&-disabled {
+			background-color: #c7c7c7;
+			cursor: not-allowed;
+
+			&:hover {
+				background-color: #c7c7c7;
+				color: $dark-color;
+			}
 		}
 	}
 }
@@ -101,4 +120,26 @@ input[type='checkbox'] {
 	&::before {
 		transform: scaleY(1);
 	}
+}
+
+.form-error-text {
+	display: none;
+	position: absolute;
+	bottom: -1.4em;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $error-color;
+}
+
+.form-input-box.form-error .form-input {
+	border-bottom: 3px solid $error-color;
+}
+
+.form-input-box.form-error .form-error-text {
+	display: block;
+}
+
+.services-heading {
+	margin-bottom: 0.5em;
+	font-size: 3.6rem;
 }

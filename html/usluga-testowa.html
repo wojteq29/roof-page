@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    @@include('./components/_links.html')
+</head>
+
+<body>
+    @@include('./components/_nav.html', {
+    "index": "#index",
+    "about-us": "#about-us",
+    "services": "#services",
+    "gallery": "gallery.html",
+    "contact": "#contact"
+    })
+
+    <header class="header-services header-services--test">
+        <h1 class="header-services__heading">Montaż dachówek</h1>
+        <div class="hero-shadow"></div>
+    </header>
+
+    <main class="main-services section-padding">
+        <section class="service-info">
+            <div class="wrapper">
+                <h2 class="services-heading">Opis usługi</h2>
+                <p class="service-info__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et neque
+                    suscipit accusantium vel quisquam sed ipsam ut autem atque itaque error, quas repellendus porro
+                    repudiandae? Optio atque laborum blanditiis sit.</p>
+                <p class="service-info__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et neque
+                    suscipit accusantium vel quisquam sed ipsam ut autem atque itaque error, quas repellendus porro
+                    repudiandae? Optio atque laborum blanditiis sit.</p>
+                <p class="service-info__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et neque
+                    suscipit accusantium vel quisquam sed ipsam ut autem atque itaque error, quas repellendus porro
+                    repudiandae? Optio atque laborum blanditiis sit.</p>
+                <p class="service-info__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et neque
+                    suscipit accusantium vel quisquam sed ipsam ut autem atque itaque error, quas repellendus porro
+                    repudiandae? Optio atque laborum blanditiis sit.</p>
+                <img src="./dist/img/header-img-small.jpg" alt="" class="service-info__carousel">
+            </div>
+        </section>
+
+        <nav class="related-services">
+            <div class="wrapper">
+                <h2 class="services-heading">Więcej usług</h2>
+                <ul class="related-services__links">
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 1</a></li>
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 2</a></li>
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 3</a></li>
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 4</a></li>
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 5</a></li>
+                    <li class="related-services__li"><a href="" class="related-services__link">Usługa 6</a></li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+
+
+    @@include('./components/_footer.html', {
+    "index": "#index",
+    "about-us": "#about-us",
+    "services": "#services",
+    "gallery": "gallery.html",
+    "contact": "#contact"
+    })
+
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

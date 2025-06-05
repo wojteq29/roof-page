@@ -150,4 +150,40 @@
 			}
 		}
 	}
+
+	.header-services {
+		&__heading {
+			font-size: 6rem;
+		}
+	}
+
+	.services-heading {
+		font-size: 3.8rem;
+	}
+
+	.main-services {
+		padding: 3.6em 2em;
+	}
+}
+
+@media (width > 850px) {
+	.main-services {
+		flex-direction: row;
+		gap: 2.4em;
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.service-info {
+		width: 60%;
+
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+
+	.related-services {
+		width: 40%;
+	}
 }

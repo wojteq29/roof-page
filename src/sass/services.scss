@@ -1,0 +1,63 @@
+@use 'utilities' as *;
+
+.header-services {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	min-height: 270px;
+	max-height: 400px;
+	height: 30vh;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+
+	&__heading {
+		font-size: 5rem;
+		color: $light-color;
+	}
+
+	&--test {
+		background-image: url('../img/header-img-small.jpg');
+	}
+}
+
+.main-services {
+	display: flex;
+	flex-direction: column;
+}
+
+.service-info {
+    margin-bottom: 2em;
+
+	&__text {
+		margin-bottom: 1em;
+        font-size: 1.7rem;
+	}
+
+	&__carousel {
+		margin-top: 0.4em;
+		width: 100%;
+	}
+}
+
+.related-services {
+	&__links {
+		list-style: none;
+	}
+
+	&__link {
+		display: inline-block;
+		margin-bottom: 0.2em;
+		padding: 0.4em;
+		width: 100%;
+		font-size: 2.2rem;
+		border: 1px solid $main-color;
+		background-color: $main-color;
+		text-align: center;
+		text-decoration: none;
+		color: $light-color;
+	}
+}
