@@ -84,9 +84,8 @@
 			}
 
 			&-textarea {
-				padding-top: 0.55em;
-				max-width: 100%;
-				min-width: 100%;
+				padding-top: 0.5em;
+				resize: vertical;
 				min-height: 40px;
 			}
 
@@ -108,9 +107,13 @@
 				display: none;
 				position: absolute;
 				bottom: -1.4em;
-				font-size: 1.35rem;
-				font-weight: 450;
+				font-size: 1.2rem;
+				font-weight: 400;
 				color: $error-color;
+
+				&--textarea {
+					bottom: -1.13em;
+				}
 			}
 
 			&-privacy-policy {
@@ -142,7 +145,7 @@
 			}
 
 			&-input-box.form-error .header__form-input {
-				border: 1px solid $error-color;
+				border-bottom: 3px solid $error-color;
 			}
 
 			&-input-box.form-error .header__form-error {
