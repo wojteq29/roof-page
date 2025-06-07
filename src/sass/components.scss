@@ -52,11 +52,11 @@
 		}
 
 		&-disabled {
-			background-color: #c7c7c7;
+			background-color: #b7b7b7;
 			cursor: not-allowed;
 
 			&:hover {
-				background-color: #c7c7c7;
+				background-color: #b7b7b7;
 				color: $dark-color;
 			}
 		}
@@ -137,6 +137,26 @@ input[type='checkbox'] {
 
 .form-input-box.form-error .form-error-text {
 	display: block;
+}
+
+.header-subpage {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	min-height: 270px;
+	max-height: 400px;
+	height: 30vh;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+
+	&__heading {
+		font-size: 5rem;
+		color: $light-color;
+	}
 }
 
 .services-heading {

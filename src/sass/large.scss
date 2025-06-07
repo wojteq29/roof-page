@@ -200,8 +200,12 @@
 		font-size: 4rem;
 	}
 
-	.header-services {
+	.header-subpage {
 		&--test {
+			background-image: url('../img/header-img-big.jpg');
+		}
+
+		&--gallery {
 			background-image: url('../img/header-img-big.jpg');
 		}
 	}
