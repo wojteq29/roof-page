@@ -10,7 +10,7 @@
 
 <body>
     @@include('./components/_nav.html', {
-    "index": "#index",
+    "index": "index.html",
     "about-us": "#about-us",
     "services": "#services",
     "gallery": "gallery.html",
@@ -23,22 +23,36 @@
     </header>
 
 
-    <main class="main-gallery">
-        <nav>
-            <ul>
-                <li><button class="btn">Kategoria 1</button></li>
-                <li><button class="btn">Kategoria 2</button></li>
-                <li><button class="btn">Kategoria 3</button></li>
-                <li><button class="btn">Kategoria 4</button></li>
-                <li><button class="btn">Kategoria 5</button></li>
-            </ul>
+    <main class="main-gallery section-padding">
+        <nav class="gallery-category">
+            <div class="wrapper">
+                <ul class="gallery-category__btns">
+                    <li><button class="gallery-category__btn link-animation-2 gallery-category__btn--active">Kategoria
+                            1</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 2</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 3</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 4</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 5</button></li>
+                </ul>
+            </div>
         </nav>
+
+        <section class="gallery-images">
+            <div class="wrapper">
+                <div class="gallery-images__box">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                </div>
+            </div>
+        </section>
     </main>
 
 
 
     @@include('./components/_footer.html', {
-    "index": "#index",
+    "index": "index.html",
     "about-us": "#about-us",
     "services": "#services",
     "gallery": "gallery.html",

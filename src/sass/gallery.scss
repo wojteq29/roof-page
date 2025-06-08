@@ -1,5 +1,44 @@
+@use 'utilities' as *;
+
 .header-subpage {
 	&--gallery {
 		background-image: url('../img/header-img-small.jpg');
+	}
+}
+
+.gallery-category {
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		list-style: none;
+	}
+
+	&__btn {
+		margin: .15em .5em;
+		padding: 0.2em .6em;
+		font-size: 2rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+
+		&--active {
+			background-color: $main-color;
+			color: $light-color;
+		}
+	}
+}
+
+.gallery-images {
+	margin-top: 1.4em;
+
+	&__box {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1em;
+	}
+
+	&__img {
+		width: 100%;
 	}
 }

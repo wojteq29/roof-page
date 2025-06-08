@@ -17,7 +17,7 @@
     <nav class="nav">
     <div class="nav__wrapper wrapper">
         <div class="nav__container">
-            <h2 class="nav__logo"><a href="#index" class="nav__logo-link">LOGO</a></h2>
+            <h2 class="nav__logo"><a href="index.html" class="nav__logo-link">LOGO</a></h2>
             <button class="hamburger hamburger--slider" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -39,16 +39,30 @@
     </header>
 
 
-    <main class="main-gallery">
-        <nav>
-            <ul>
-                <li><button class="btn">Kategoria 1</button></li>
-                <li><button class="btn">Kategoria 2</button></li>
-                <li><button class="btn">Kategoria 3</button></li>
-                <li><button class="btn">Kategoria 4</button></li>
-                <li><button class="btn">Kategoria 5</button></li>
-            </ul>
+    <main class="main-gallery section-padding">
+        <nav class="gallery-category">
+            <div class="wrapper">
+                <ul class="gallery-category__btns">
+                    <li><button class="gallery-category__btn link-animation-2 gallery-category__btn--active">Kategoria
+                            1</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 2</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 3</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 4</button></li>
+                    <li><button class="gallery-category__btn link-animation-2">Kategoria 5</button></li>
+                </ul>
+            </div>
         </nav>
+
+        <section class="gallery-images">
+            <div class="wrapper">
+                <div class="gallery-images__box">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                    <img src="./dist/img/header-img-small.jpg" alt="" class="gallery-images__img">
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -64,7 +78,7 @@
         <div class="footer__box">
             <h3 class="footer__heading">Strony</h3>
             <ul class="footer__links">
-                <li class="footer__page-li footer__li"><a href="#index"
+                <li class="footer__page-li footer__li"><a href="index.html"
                         class="footer__link link-animation link-animation--light">Strona główna</a></li>
                 <li class="footer__page-li footer__li"><a href="#about-us"
                         class="footer__link link-animation link-animation--light">O nas</a></li>

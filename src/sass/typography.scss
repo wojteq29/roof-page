@@ -1,22 +1,26 @@
 @use 'utilities' as *;
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 }
 
-h1, h2, h3, .btn, input::placeholder, select:invalid, textarea::placeholder {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+.btn,
+input::placeholder,
+select:invalid,
+textarea::placeholder,
+.gallery-category__btn,
+.nav__link,
+.related-services__link {
+	font-family: 'Anton', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 textarea {
-    font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
-.nav__link, .related-services__link {
-    font-family: "Anton", sans-serif;   
-    font-weight: 400;
-    text-transform: uppercase;
-}

@@ -84,7 +84,7 @@ input[type='checkbox'] {
 
 .link-animation {
 	position: relative;
-	transition: color 0.1s;
+	transition: color 0.2s;
 	z-index: 10;
 
 	&::before {
@@ -97,7 +97,7 @@ input[type='checkbox'] {
 		background-color: $main-color;
 		transform: scaleY(0);
 		transform-origin: bottom;
-		transition: transform 0.1s;
+		transition: transform 0.2s;
 		z-index: -1;
 	}
 
@@ -119,6 +119,28 @@ input[type='checkbox'] {
 
 	&::before {
 		transform: scaleY(1);
+	}
+}
+
+.link-animation-2 {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 98%;
+		height: 3px;
+		background-color: $main-color;
+		transform: scaleX(0);
+		transition: transform 0.3s;
+		transform-origin: right;
+	}
+
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
 	}
 }
 

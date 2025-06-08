@@ -164,6 +164,12 @@
 	.main-services {
 		padding: 3.6em 2em;
 	}
+
+	.gallery-images {
+		&__box {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }
 
 @media (width > 850px) {
@@ -184,6 +190,24 @@
 	}
 
 	.related-services {
+		margin-left: 2em;
 		width: 40%;
+
+		&__link {
+			&--active {
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: -0.89em;
+					transform: translateY(-50%) rotate(45deg);
+					width: 1.67em;
+					height: 1.67em;
+					background-color: $main-color;
+				}
+			}
+		}
 	}
 }
